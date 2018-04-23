@@ -1,13 +1,13 @@
 #pragma once
 #include "AbstractUnits.hpp"
-
+#include <iostream>
 
 class Juggernaut : public Hero{     // герой Juggernaut
     std::string skill1 = "Omnislash";
     std::string skill2 = "HealingWard";
     
 public:
-    Juggernaut(){
+    Juggernaut() {
         healthPoints = 600;
         damage = 60;
         mana = 300;
@@ -17,7 +17,7 @@ public:
         default_money = 650;
     }
     
-    virtual void info(){
+    virtual void info() {
         std::cout << "hero = Juggernaut" << std:: endl;
     }
 };
@@ -27,7 +27,7 @@ class Sven : public Hero{     // герой Sven
     std::string skill2 = "Rage";
     
 public:
-    Sven(){
+    Sven() {
         healthPoints = 650;
         damage = 70;
         mana = 200;
@@ -37,34 +37,34 @@ public:
         default_money = 650;
     }
     
-    virtual void info(){
+    virtual void info() {
         std::cout << "hero = Sven" << std:: endl;
     }
 };
 
 class Centaur : public NeutralCreep{   // нейтральный крип - кентавр
 public:
-    Centaur(){
+    Centaur() {
         healthPoints = 100;
         killing_reward = 120;
         spawn_time = 0;
         damage = 50;
     }
-    virtual void info(){
+    virtual void info() {
         std::cout << "creep = centanaur" << std:: endl;
     }
 };
 
 class Golem : public NeutralCreep{  // нейтральный крип - голем
 public:
-    Golem(){
+    Golem() {
         healthPoints = 50;
         killing_reward = 30;
         damage = 10;
         spawn_time = 0;
     }
     
-    virtual void info(){
+    virtual void info() {
         std::cout << "creep = Golem" << std:: endl;
     }
 };

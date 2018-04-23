@@ -4,24 +4,16 @@
 
 class HeroCreator {    
 public:
-    Juggernaut* CreateJug(){
-        return new Juggernaut;
-    }
+     Juggernaut* CreateJug();
 
-    Sven* CreateSven(){
-        return new Sven;
-    }
+     Sven* CreateSven();
 };
 
 class CreepCreator {
 public:
-    Centaur* CreateCentaur(){
-        return new Centaur;
-    }
+    Centaur* CreateCentaur();
     
-    Golem* CreateGolem(){
-        return new Golem;
-    }
+    Golem* CreateGolem();
 };
 
 

@@ -6,7 +6,7 @@ class Unit {
 public:
     int healthPoints;
     int damage;
-    virtual void info(){};
+    virtual void info() {};
 };
 
 // abstract class hero
@@ -21,9 +21,9 @@ public:
     double mana_coef;
     double dmg_coef;
     
-    virtual void use_skill1(){};
-    virtual void use_skill2(){};
-    virtual void info(){};
+    virtual void use_skill1() {};
+    virtual void use_skill2() {};
+    virtual void info() {};
 };
 
 // абстракный класс - нейтральный крип

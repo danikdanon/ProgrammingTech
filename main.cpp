@@ -7,7 +7,10 @@ int main() {
     DireTeam p1;
     RadiantTeam p2;
     // Heroes: Sven, Juggernaut  Creeeps: Golem, Centanaur
-    std::string radiant_hero,dire_hero,radiant_creep,dire_creep;
+    std::string radiant_hero;
+    std::string dire_hero;
+    std::string radiant_creep;
+    std::string dire_creep;
     std::cin  >> radiant_hero >> radiant_creep >> dire_hero >> dire_creep;
     
     p1.AddHero(radiant_hero);
