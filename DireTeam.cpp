@@ -25,3 +25,12 @@ void DireTeam::info() {
     for (auto  &creep : Creeps)
         creep->info();
 }
+
+int DireTeam::getStrength() {
+    int ans = 0;
+    for (auto &hero: Heroes)
+        ans += hero->getStrength();
+    for (auto & creep: Creeps)
+        ans += creep->getStrength();
+    return ans;
+}

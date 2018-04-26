@@ -12,6 +12,7 @@ public:
     void AddHero(std::string name);
     void AddCreep(std::string name);
     void info();
+    int getStrength();
     
 private:
     std::vector<Hero*> Heroes;

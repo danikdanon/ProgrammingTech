@@ -3,10 +3,10 @@
 #include <iostream>
 
 class Juggernaut : public Hero{     // герой Juggernaut
+public:
     std::string skill1 = "Omnislash";
     std::string skill2 = "HealingWard";
-    
-public:
+
     Juggernaut() {
         healthPoints = 600;
         damage = 60;
@@ -19,6 +19,10 @@ public:
     
     virtual void info() {
         std::cout << "hero = Juggernaut" << std:: endl;
+    }
+    
+    virtual int getStrength(){
+        return healthPoints + damage*4 + mana + level*20;
     }
 };
 
@@ -40,6 +44,10 @@ public:
     virtual void info() {
         std::cout << "hero = Sven" << std:: endl;
     }
+    
+    virtual int getStrength(){
+        return healthPoints + damage*4 + mana + level*20;
+    }
 };
 
 class Centaur : public NeutralCreep{   // нейтральный крип - кентавр
@@ -52,6 +60,10 @@ public:
     }
     virtual void info() {
         std::cout << "creep = centanaur" << std:: endl;
+    }
+    
+    virtual int getStrength(){
+        return 20;
     }
 };
 
@@ -66,5 +78,9 @@ public:
     
     virtual void info() {
         std::cout << "creep = Golem" << std:: endl;
+    }
+    
+    virtual int getStrength(){
+        return 15;
     }
 };
